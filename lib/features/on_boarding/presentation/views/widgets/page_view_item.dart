@@ -3,16 +3,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class PageViewItem extends StatelessWidget {
-  const PageViewItem(
-      {super.key,
-      required this.image,
-      required this.background,
-      required this.title,
-      required this.subTitle});
+  const PageViewItem({
+    super.key,
+    required this.image,
+    required this.background,
+    required this.title,
+    required this.subTitle,
+    required this.isVisable,
+  });
 
   final String image, background, subTitle;
   final Widget title;
-
+  final bool isVisable;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -37,8 +39,11 @@ class PageViewItem extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: const Text('تخط'),
+                padding: EdgeInsets.all(16.0),
+                child: Visibility(
+                  visible: isVisable,
+                  child: const Text('تخط'),
+                ),
               ),
             ],
           ),
