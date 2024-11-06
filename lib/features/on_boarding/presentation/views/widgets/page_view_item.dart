@@ -1,5 +1,6 @@
 import 'package:e_commerce/core/utils/app_text_styles.dart';
 import 'package:e_commerce/core/utils/constants.dart';
+import 'package:e_commerce/features/auth/presentation/views/login_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -39,14 +40,19 @@ class PageViewItem extends StatelessWidget {
                   image,
                 ),
               ),
-              Padding(
-                padding: EdgeInsets.all(16.0),
-                child: Visibility(
-                  visible: isVisable,
-                  child: Text(
-                    'تخط',
-                    style: TextStyles.regular13.copyWith(
-                      color: const Color.fromARGB(255, 129, 137, 138),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushReplacementNamed(context, LoginView.routeName);
+                },
+                child: Padding(
+                  padding: EdgeInsets.all(16.0),
+                  child: Visibility(
+                    visible: isVisable,
+                    child: Text(
+                      'تخط',
+                      style: TextStyles.regular13.copyWith(
+                        color: const Color.fromARGB(255, 129, 137, 138),
+                      ),
                     ),
                   ),
                 ),
