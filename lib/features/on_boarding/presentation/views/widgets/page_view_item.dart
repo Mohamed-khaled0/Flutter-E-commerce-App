@@ -35,10 +35,27 @@ class PageViewItem extends StatelessWidget {
                   image,
                 ),
               ),
-              const Text('تخط'),
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: const Text('تخط'),
+              ),
             ],
           ),
-        )
+        ),
+        SizedBox(
+          height: 60,
+        ),
+        title,
+        SizedBox(
+          height: 20,
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20.0),
+          child: Text(
+            subTitle,
+            textAlign: TextAlign.center,
+          ),
+        ),
       ],
     );
   }
