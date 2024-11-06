@@ -20,9 +20,15 @@ class OnBoardingViewBody extends StatelessWidget {
               activeColor: AppColors.primaryColor,
               color: AppColors.primaryColor.withOpacity(.5)),
         ),
+        SizedBox(
+          height: 23,
+        ),
         Padding(
           padding: const EdgeInsets.all(16.0),
           child: CustomButton(onPressed: () {}, text: 'ابدأ الان'),
+        ),
+        SizedBox(
+          height: 43,
         )
       ],
     );

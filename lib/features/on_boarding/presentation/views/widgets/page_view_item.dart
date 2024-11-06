@@ -1,3 +1,4 @@
+import 'package:e_commerce/core/utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -50,7 +51,7 @@ class PageViewItem extends StatelessWidget {
           height: 20,
         ),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20.0),
+          padding: const EdgeInsets.symmetric(horizontal: kHorizintalPadding),
           child: Text(
             subTitle,
             textAlign: TextAlign.center,
