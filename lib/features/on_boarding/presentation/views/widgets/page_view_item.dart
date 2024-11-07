@@ -1,7 +1,7 @@
 import 'package:e_commerce/core/services/shared_preferences_singletone.dart';
 import 'package:e_commerce/core/utils/app_text_styles.dart';
 import 'package:e_commerce/core/utils/constants.dart';
-import 'package:e_commerce/features/auth/presentation/views/login_view.dart';
+import 'package:e_commerce/features/auth/presentation/views/widgets/login_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 

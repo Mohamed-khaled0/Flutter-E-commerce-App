@@ -2,7 +2,7 @@ import 'package:dots_indicator/dots_indicator.dart';
 import 'package:e_commerce/core/utils/app_colors.dart';
 import 'package:e_commerce/core/utils/constants.dart';
 import 'package:e_commerce/core/widgets/custom_button.dart';
-import 'package:e_commerce/features/auth/presentation/views/login_view.dart';
+import 'package:e_commerce/features/auth/presentation/views/widgets/login_view.dart';
 import 'package:e_commerce/features/on_boarding/presentation/views/widgets/onboarding_page_view.dart';
 import 'package:flutter/material.dart';
 
@@ -64,8 +64,7 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
             padding: const EdgeInsets.all(kHorizintalPadding),
             child: CustomButton(
                 onPressed: () {
-                  Navigator.pushReplacementNamed(
-                      context, LoginView.routeName);
+                  Navigator.pushReplacementNamed(context, LoginView.routeName);
                 },
                 text: 'ابدأ الان'),
           ),
