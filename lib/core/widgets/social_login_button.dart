@@ -19,7 +19,7 @@ class SocialLoginButton extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: kHorizintalPadding),
       child: SizedBox(
           width: double.infinity,
-          height: 48,
+          height: 55,
           child: TextButton(
             style: TextButton.styleFrom(
               shape: RoundedRectangleBorder(
